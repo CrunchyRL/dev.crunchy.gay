@@ -1,59 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Welcome to dev.crunchy.gay</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    text-align: center;
-  }
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-  }
-  .container {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 1rem;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to dev.crunchy.gay</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to dev.crunchy.gay</h1>
-    <p>Your destination for all things development and creativity.</p>
+  <header class="header">
+    <div class="header__content">
+      <h1 class="header__title">Welcome to dev.crunchy.gay</h1>
+      <p class="header__subtitle">Where Innovation Meets Imagination</p>
+    </div>
   </header>
-  <div class="container">
-    <h2>About Us</h2>
-    <p>We are passionate about coding, design, and everything in between. Our mission is to create a welcoming and inclusive space for developers and creatives to learn, share, and grow together.</p>
-    
-    <h2>Latest Articles</h2>
-    <ul>
-      <li><a href="#">Introduction to Web Development</a></li>
-      <li><a href="#">Design Principles for Non-Designers</a></li>
-      <li><a href="#">Getting Started with JavaScript</a></li>
-    </ul>
-    
-    <h2>Join Our Community</h2>
-    <p>Connect with fellow developers, designers, and enthusiasts in our community. Share your knowledge, ask questions, and collaborate on exciting projects.</p>
-    <p><a href="#">Join Now</a></p>
-  </div>
-  <footer>
-    <p>&copy; 2023 dev.crunchy.gay. All rights reserved.</p>
+  <main class="main">
+    <section class="about">
+      <div class="container">
+        <h2 class="section__title">About Us</h2>
+        <p class="section__description">At dev.crunchy.gay, we are a diverse community of tech enthusiasts, designers, and creators. Our mission is to inspire, educate, and elevate the world of technology and creativity through collaborative projects, insightful articles, and engaging events.</p>
+      </div>
+    </section>
+    <section class="articles">
+      <div class="container">
+        <h2 class="section__title">Latest Articles</h2>
+        <div class="article-list">
+          <div class="article">
+            <h3 class="article__title"><a href="#">Mastering AI: From Theory to Real-World Applications</a></h3>
+            <p class="article__description">Explore the intricacies of artificial intelligence and learn how to implement AI solutions in various domains.</p>
+          </div>
+          <div class="article">
+            <h3 class="article__title"><a href="#">Digital Artistry: Pushing Boundaries with Creative Coding</a></h3>
+            <p class="article__description">Dive into the world of generative art and discover how code can be used to create mesmerizing visual experiences.</p>
+          </div>
+          <div class="article">
+            <h3 class="article__title"><a href="#">Decoding Cryptocurrencies: The Future of Finance</a></h3>
+            <p class="article__description">Uncover the mysteries of cryptocurrencies, blockchain technology, and their potential to reshape the financial landscape.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects">
+      <div class="container">
+        <h2 class="section__title">Featured Projects</h2>
+        <div class="project-list">
+          <div class="project">
+            <img src="project1-thumbnail.jpg" alt="Project 1 Thumbnail" class="project__image">
+            <div class="project__details">
+              <h3 class="project__title">Project QuantumLeap</h3>
+              <p class="project__description">Embark on an interactive journey through the wonders of quantum physics. Experience quantum phenomena through immersive visualizations.</p>
+              <a href="#" class="project__link">Explore QuantumLeap</a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="project2-thumbnail.jpg" alt="Project 2 Thumbnail" class="project__image">
+            <div class="project__details">
+              <h3 class="project__title">Project PixelCanvas</h3>
+              <p class="project__description">Join the collaborative canvas where art and code collide. Contribute your pixel art creations using an intuitive coding interface.</p>
+              <a href="#" class="project__link">Discover PixelCanvas</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="community">
+      <div class="container">
+        <h2 class="section__title">Join Our Community</h2>
+        <p class="section__description">Connect with fellow innovators, creators, and tech enthusiasts in our dynamic community. Engage in discussions, share your projects, and be a part of the future.</p>
+        <a href="#" class="section__link">Join the Movement</a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">&copy; 2023 dev.crunchy.gay. All Rights Reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
