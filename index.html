@@ -101,11 +101,17 @@
       </div>
     </div>
     
-    <div class="section">
-      <div id="cta">
-        <button>Reply with Your Answer</button>
+      
+      <div id="replyForm" style="display: none;">
+        <h2>Your Answer:</h2>
+        <form id="answerForm" onsubmit="submitAnswer(); return false;">
+          <input type="radio" id="accept" name="answer" value="accept">
+          <label for="accept">Yes, I will marry you!</label><br>
+          <input type="radio" id="reject" name="answer" value="reject">
+          <label for="reject">I'm sorry, but I can't.</label><br>
+          <button type="submit">Submit</button>
+        </form>
       </div>
-    </div>
   </div>
 </body>
 </html>
